@@ -24,6 +24,9 @@ jobs:
               run: |
                   npm run-script build
 
+            - name: Change base-tag in index.html from / to covid-stats
+              run: sed -i 's/<base href="\/" \/>/<base href="\/covid-stats\/" \/>/g' public/index.html
+
             - name: Deploy 🚀
               uses: JamesIves/github-pages-deploy-action@4.1.7
               with:
