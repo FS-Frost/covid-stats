@@ -14,7 +14,7 @@
         title="Fork me on GitHub">Fork me on GitHub</a
     >
 
-    <h1>Estadísticas de Covid-19</h1>
+    <h1 class="title">Estadísticas de Covid-19</h1>
 
     <Stats />
 
@@ -30,10 +30,9 @@
         margin: 0 auto;
     }
 
-    h1 {
+    .title {
         color: #bd0000;
         text-transform: uppercase;
-        font-size: 4em;
         font-weight: 100;
         text-align: center;
     }
@@ -41,6 +40,10 @@
     @media (min-width: 640px) {
         main {
             max-width: none;
+        }
+
+        .title {
+            font-size: 1.6em;
         }
     }
 
